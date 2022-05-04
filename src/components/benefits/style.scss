@@ -147,6 +147,11 @@
         background-position: center;
         border-radius: 50%;
         margin-right: 20px;
+
+        @media (max-width: 390px) {
+          height: 24px;
+          margin-right: 10px;
+        }
       }
 
       &:not(:last-child) {
@@ -176,7 +181,7 @@
 
     @media (max-width: 680px) {
       width: 160px;
-      transform: translate(-50%, -12%) rotate(-20.21deg);
+      transform: translate(-50%, -17%) rotate(-20.21deg);
     }
 
     @media (max-width: 390px) {

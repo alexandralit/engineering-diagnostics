@@ -57,7 +57,7 @@ const Services = () => {
         <h2 className="title">Выполняем как комплексное обследование, так и отдельные виды работ</h2>
       </div>
       <div className="container">
-        <ul className="gallary" ref={target} horizontal>
+        <ul className="gallary" ref={target}>
           <li className="gallary-item">
             <div className="img img-1"></div>
             <h3 className="gallary-item_title">Общее обследование</h3>
