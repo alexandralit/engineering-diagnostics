@@ -1,0 +1,322 @@
+.wrap {
+  background-image: url("./../../assets/img/bg-header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	background-attachment: local;
+	position: relative;
+
+	&:after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(180deg, rgba(0, 78, 134, 0.8) 0%, rgba(10, 65, 104, 0.8) 100%);
+		z-index: 0;
+	}
+}
+
+.main {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 5;
+
+  .line {
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 462px;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    @media (max-width: 1500px) {
+      right: 362px;
+    }
+
+    @media (max-width: 1080px) {
+      display: none;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    &:nth-child(1) {
+      align-items: center;
+      padding: 128px 120px 63px;
+
+      @media (max-width: 1500px) {
+        padding: 128px 20px 63px;
+      }
+
+      @media (max-width: 1080px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 88px 20px 43px;
+      }
+
+      @media (max-width: 680px) {
+        padding: 40px 0;
+      }
+    }
+
+    &:nth-child(2) {
+      align-items: flex-end;
+      padding-bottom: 60px;
+    }
+  }
+
+  .title {
+    max-width: 560px;
+    font-family: "Gilroy-Extrabold", sans-serif;
+    font-size: 42px;
+    line-height: 51px;
+    letter-spacing: -0.5px;
+    color: #fff;
+
+    span {
+      display: block;
+      font-family: "ProximaNova-Bold", sans-serif;
+      font-size: 20px;
+      line-height: 34px;
+      margin-top: 38px;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 1500px) {
+      max-width: 450px;
+    }
+
+    @media (max-width: 680px) {
+      font-size: 25px;
+      line-height: 30px;
+
+      span {
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 18px;
+      }
+    }
+  }
+
+  .inner {
+    max-width: 340px;
+
+    @media (max-width: 1080px) {
+      margin-top: 40px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      font-family: "Gilroy-Extrabold", sans-serif;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #000000;
+      padding: 29px 57px 26px;
+      background-color: #FEE040;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+
+      span {
+        display: inline-flex;
+        width: 12px;
+        height: 12px;
+        margin-right: 12px;
+        background-image: url("./../../assets/img/download.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      &:hover {
+        background-color: #FFEB81;
+        box-shadow: 0px 12px 42px -21px rgba(254, 224, 64, 0.6);
+      }
+
+      @media (max-width: 680px) {
+        padding: 24px 40px 21px;
+      }
+
+      @media (max-width: 390px) {
+        padding: 24px 30px 21px;
+      }
+    }
+    
+    .text {
+      font-family: "ProximaNova-Regular", sans-serif;
+      font-size: 15px;
+      line-height: 28px;
+      color: #fff;
+      margin-top: 40px;
+
+      @media (max-width: 680px) {
+        line-height: 22px;
+      }
+    }
+  }
+
+  .list {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 680px) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      font-family: "ProximaNova-Bold", sans-serif;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: -0.5px;
+      color: #fff;
+
+      img {
+        margin-right: 28px;
+      }
+
+      &:not(:last-child) {
+        margin-right: 100px;
+      }
+
+      @media (max-width: 1500px) {
+        img {
+          margin-right: 18px;
+        }
+  
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+
+      @media (max-width: 1080px) {
+        font-size: 16px;
+        line-height: 20px;
+
+        img {
+          max-width: 40px;
+        }
+      }
+
+      @media (max-width: 680px) {
+        &:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+
+      @media (max-width: 390px) {
+        font-size: 14px;
+        line-height: 18px;
+
+        img {
+          max-width: 30px;
+        }
+      }
+    }
+  }
+
+  .video {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    background-image: url("./../../assets/img/man.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @media (max-width: 1500px) {
+      width: 110px;
+      height: 110px;
+      margin: 30px;
+    }
+
+    @media (max-width: 1080px) {
+      position: absolute;
+      bottom: 145px;
+      right: 0;
+    }
+
+    @media (max-width: 680px) {
+      width: 90px;
+      height: 90px;
+      margin: 20px;
+      position: relative;
+      right: 0;
+      bottom: 0;
+    }
+
+    @media (max-width: 390px) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .btn-play {
+    border-top: 11.5px solid transparent;
+    border-left: 20px solid #FEE040;
+    border-bottom: 11.5px solid transparent;
+  }
+
+  .circle {
+    position: relative;
+
+    span {
+      position: absolute;
+      top: -102px;
+      left: 8px;
+      font-family: "Bebas-Neue", sans-serif;
+      font-size: 11px;
+      line-height: 11px;
+      text-transform: uppercase;
+      transform-origin: 0 105px;
+
+      @media (max-width: 1500px) {
+        top: -84px;
+        transform-origin: 0 85px;
+      }
+
+      @media (max-width: 680px) {
+        top: -70px;
+        transform-origin: 0 70px;
+      }
+
+      @media (max-width: 390px) {
+        font-size: 10px;
+        line-height: 10px;
+        top: -59px;
+        transform-origin: 0 60px;
+      }
+    }
+
+    .dot {
+      color: #fee040;
+    }
+  }
+}

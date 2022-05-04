@@ -1,0 +1,62 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: "ProximaNova-Extrabld";
+  src: local("ProximaNova-Extrabld"), url("./assets/fonts/ProximaNova-Extrabld.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src: local("ProximaNova-Bold"), url("./assets/fonts/ProximaNova-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Semibold";
+  src: local("ProximaNova-Semibold"), url("./assets/fonts/ProximaNova-Semibold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-SemiboldIt";
+  src: local("ProximaNova-SemiboldIt"), url("./assets/fonts/ProximaNova-SemiboldIt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src: local("ProximaNova-Regular"), url("./assets/fonts/ProximaNova-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova-RegularIt";
+  src: local("ProximaNova-RegularIt"), url("./assets/fonts/ProximaNova-RegularIt.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Extrabold";
+  src: local("Gilroy-Extrabold"), url("./assets/fonts/Gilroy-Extrabold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: local("Gilroy-Bold"), url("./assets/fonts/Gilroy-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bebas-Neue";
+  src: local("Bebas-Neue"), url("./assets/fonts/Bebas-Neue.ttf") format("truetype");
+}

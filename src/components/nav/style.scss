@@ -1,0 +1,73 @@
+.nav {
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  background: linear-gradient(180deg, #60B6FF 0%, rgba(0, 78, 134, 0.8) 100%);
+  z-index: 7;
+
+  &-open {
+    left: 0;
+    animation: menuOpen 0.5s ease;
+  }
+
+  &-link {
+    font-family: "Bebas-Neue", sans-serif;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #FEE040;
+    transition: all 0.5s ease;
+   
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &:hover {
+      color: rgba(254, 225, 64, 0.7);
+    }
+  }
+}
+
+.close {
+  cursor: pointer; 
+  position: absolute; 
+  top: 20px; 
+  right: 35px;
+  z-index: 8;
+  transition: all 0.5s ease;
+  
+  &:before, 
+  &:after {
+    content: ""; 
+    position: absolute; 
+    width: 24px; 
+    height: 3px; 
+    background-color: #FEE040;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+@keyframes menuOpen {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0;
+  }
+}
